@@ -1,0 +1,30 @@
+{
+  "name": "jquery.pin",
+  "version": "1.0.3",
+  "description": "jquery pin",
+  "main": "jquery.pin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxpgw/jquery.pin.git"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "pin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lxpgw/jquery.pin/issues"
+  },
+  "homepage": "https://github.com/lxpgw/jquery.pin#readme",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}

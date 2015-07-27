@@ -1,35 +1,37 @@
 ## jQuery.pin
 
-Ever wanted to **pin** something to the side of a text? Ever needed a subtle sticky element to quietly hang around as you scroll down?
-
-**Jquery.Pin** is here to help! Pin any element to the top of a container. Easily **disable** it for smaller screen-sizes where there's no room for that kind of shenanigans.
+对原[项目](https://github.com/webpop/jquery.pin)的扩展以及更新.
 
 ## Usage
 
-Include jquery and jquery pin at the bottom of your html. Then pin any element you want like this:
+### 基本用法
 
-    $(".pinned").pin()
+将某个DOM以body为容器进行固定.
 
-To make a pinned element stay within an outer container, use the containerSelector option. If you use a fixed header on your page and want the pin to be triggered as soon as your element hits it, use the fixedHeaderSelector option:
+```javascript
+$(".pinned").pin()
+```
 
-    $(".pinned").pin({
-        containerSelector: ".container",
-        fixedHeaderSelector: "header"
-        })
+固定到某个容器内部
 
-That's it - go pin all the things!
+```javascript
+$(".pinned").pin({
+    containerSelector: ".container"
+})
+```
+
+### 高级用法
+
+有时候我们需要对目标DOM设置top,或者bottom, 以针对页面中有固定顶部菜单栏等情况，可以设置以下参数:
+
+```javascript
+$(".pinned").pin({
+    padding: {top: 50}
+})
+```
+
+`padding` 接收一个object,用来设置 `top` 和 `bottom` 值
 
 ## Examples
 
 Plenty of examples [Here](http://webpop.github.com/jquery.pin/).
-
-## License
-
-Copyright (c) 2013, Mathias Biilmann
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-
-Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

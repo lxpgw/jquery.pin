@@ -6,13 +6,9 @@
     <meta charset="utf-8">
     <meta name="description" content="A jQuery plugin for pinning elements within a container.">
 
-    <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Neuton:400,700,400italic' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    
+
     <!-- This is an example of jQuery.pin in use. Check the very bottom for the javascript. -->
 
   </head>
@@ -24,13 +20,13 @@
       </div>
     </header>
     <ul class="social">
-      <li class="twitter"><a href="http://twitter.com/share?text=Pin%20Things%2C%20with%20jQuery.pin%20http%3A%2F%2Fwebpop.github.com%2Fjquery.pin%20%23webpop%2C%20%23jQuery"><i class="icon-twitter"></i><span>Share on Twitter</span></a></li>        
+      <li class="twitter"><a href="http://twitter.com/share?text=Pin%20Things%2C%20with%20jQuery.pin%20http%3A%2F%2Fwebpop.github.com%2Fjquery.pin%20%23webpop%2C%20%23jQuery"><i class="icon-twitter"></i><span>Share on Twitter</span></a></li>
       <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://webpop.github.com/jquery.pin"><i class="icon-facebook"></i><span>Share on Facebook</span></a></li>
       <li class="gplus"><a href="https://plus.google.com/share?url=http://webpop.github.com/jquery.pin"><i class="icon-google-plus"></i><span>Share on Google+</span></a></li>
     </ul>
     <div class="wrapper">
       <h2 class="sub">Make your stuff stick!</h2>
-      <section class="container clearfix">   
+      <section class="container clearfix">
         <div class="row">
           <div class="left-col">
             <p class="lead">
@@ -74,7 +70,7 @@
               <figure class="cat">
                 <img src="http://lorempixel.com/700/800/cats" width="700" height="800"/>
                 <div class="handwritten cat-indicator"><i class="icon-hand-up"></i> This is a cat</div>
-              </figure>              
+              </figure>
             </div>
             <div class="right-col">
               <div class="pinned">
@@ -143,25 +139,11 @@
 
     <!-- PIN ALL THE THINGS! -->
     <script>
-      $(".pinned").pin({containerSelector: ".container", minWidth: 940});
+      $(".pinned").pin({containerSelector: ".container", minWidth: 940, 'top': 10});
     </script>
     <!-- That's all - pretty easy, right? -->
-    
-    
-    
-    <!-- Analytics -->
-    <script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-18439732-5']);
-      _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
 
-    </script>
   </body>
 </html>
